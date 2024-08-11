@@ -1,0 +1,9 @@
+.boton{
+    padding: 1.25rem;
+    background-color: #14d307;
+    color: #03033d;
+    border-radius: 1.5rem;
+    &:hover{
+        box-shadow: 2px 4px 8px 4px #050229;
+    }
+}

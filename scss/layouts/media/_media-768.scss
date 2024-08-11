@@ -1,0 +1,69 @@
+/* Estilos responsivos */
+@media(max-width: 768px) {
+  .header {
+    flex-direction: column;
+    align-items: flex-center;
+    nav {
+      width: 80%;
+    }
+    .navbar {
+      flex-direction: column;
+      width: 100%;
+      li {
+        margin: 0.25rem;
+        padding: 0.125rem;
+        text-align: center;
+      }
+    }
+  }
+
+  h1 {
+    font-size: 2rem;
+    padding: 1rem;
+  }
+  .content {
+    width: 80%;
+    flex-direction: column;
+    p {
+      width: 100%;
+      font-size: 0.75rem;
+      padding: 1rem;
+    }
+    .caja1 {
+      flex-direction: column;
+      padding: 1rem;
+      width: 100%;
+    }
+  }
+
+h2 {
+  width: 100%;
+  font-size: 1.5rem;
+}
+img {
+  width: 100%;
+}
+.section2 {
+  width: 80%;
+  flex-direction: column;
+  p {
+    width: 100%;
+    font-size: 0.75rem;
+    padding: 1rem;
+  }
+}
+.container {
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  p {
+    width: 100%;
+    font-size: 0.75rem;
+  }
+  .card {
+  
+    align-items: center;
+    width: 70%;
+  }
+}
+}

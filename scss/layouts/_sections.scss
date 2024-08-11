@@ -1,0 +1,63 @@
+.container {
+  width: 100%;
+  max-width: 1200px;
+}
+.content {
+  max-width: 1200px;
+  color: #050229;
+  border-radius: 0.75rem;
+  box-shadow: 2px 4px 8px 4px #050229;
+  border-radius: 0.9375rem;
+  width: 70%;
+  padding: 2rem;
+  margin: auto;
+  img{
+    width: 60%;
+    max-width: 600px;
+    height: auto;
+    border-radius: 1rem;
+  }
+}
+.caja1 {
+ display: flex;
+ justify-content: space-between;
+  align-items: center;
+
+.section1 {
+  display: flex;
+  justify-content: space-around;
+  align-content: center;
+
+  img {
+    width: 90%;
+    max-width: 600px;
+    height: auto;
+  }
+}
+}
+.section2 {
+  @include parrafos($colorParrafos,1.125rem,arial,justify);
+  @include flex(space-between,center,row,nowrap,.125rem);
+  background-image: url(../assets/conciencia.jpg);
+  background-repeat: no-repeat;
+  background-size:contain;
+  box-shadow: 2px 4px 8px 4px #050229;
+  border-radius: 0.9375rem;
+  width: 70%;
+  padding: 2.5rem;
+  margin: 1rem auto;
+
+  p {
+    width: 80%;
+    text-align: justify;
+    margin: .50rem auto;
+    padding: 2rem;
+    font-size: 1rem;
+  }
+}
+.nosotros-p {
+  @include parrafos($colorParrafos,1.125rem,arial,justify);
+  margin: 1rem auto;
+  padding: 2rem;
+
+} 

@@ -1,0 +1,15 @@
+@mixin flex($justify,$align,$direction,$wrap,$gap){
+display: flex;
+justify-content: $justify;
+align-items: $align;
+flex-direction: $direction;
+flex-wrap: $wrap;
+gap:$gap;
+}
+
+@mixin parrafos($color,$tamano,$tipo,$texto){
+    color: $color;
+    font-size:$tamano;
+    font-family: $tipo;
+    text-align:$texto;
+}

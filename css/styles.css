@@ -1,0 +1,313 @@
+/*llamado e imports utilities   */
+/*para los titulos h2 y h3*/
+/*llamado e imports base   */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+a {
+  text-decoration: none; }
+
+li {
+  list-style: none; }
+
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: #020241; }
+
+h2 {
+  color: #050229;
+  font-size: 2rem;
+  padding: 1rem;
+  width: 70%; }
+
+h3 {
+  color: #050229;
+  font-size: 1.5rem;
+  padding: 1rem;
+  width: 100%;
+  margin: 0.25rem; }
+  h3:hover {
+    color: #17a301; }
+
+h4 {
+  color: #050229;
+  font-size: 1rem;
+  padding: 0.5rem;
+  width: 100%;
+  margin: 0.25rem; }
+
+@font-face {
+  font-family: "chocoShake";
+  src: url("../assets/fonts/chocoShake.ttf"); }
+
+/*llamado a layouts   */
+header {
+  background-color: #001704; }
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  color: #17a301;
+  padding: 0.75rem; }
+  .header img {
+    width: 12.5rem;
+    border-radius: 15%; }
+  .header h1 {
+    font-size: 2.625rem;
+    font-family: "chocoShake"; }
+    .header h1:hover {
+      color: #3e27ae; }
+  .header nav {
+    padding-right: 1.125rem;
+    display: flex; }
+
+h2 {
+  color: #050586;
+  font-size: 2.25rem;
+  font-weight: bold; }
+
+h3 {
+  color: #050586;
+  font-size: 1.5rem; }
+
+/* Footer */
+footer {
+  background: #042400;
+  padding: 1rem 0; }
+
+.container {
+  display: flex;
+  justify-content: space-around;
+  margin: auto; }
+  .container .card {
+    width: 33%;
+    background: #fff;
+    margin: 1rem;
+    padding: 1rem;
+    border-radius: 4px;
+    box-shadow: 2px 4px 8px 4px #050229; }
+    .container .card p {
+      text-align: justify; }
+    .container .card img {
+      width: 100%;
+      height: auto; }
+  .container ul {
+    color: #020241; }
+    .container ul .li {
+      padding: 0.125rem;
+      list-style: none;
+      margin: 1rem;
+      text-decoration: dashed; }
+    .container ul li i {
+      font-size: 1rem;
+      margin-right: 1rem; }
+      .container ul li i:hover {
+        color: #3e27ae; }
+
+.container {
+  width: 100%;
+  max-width: 1200px; }
+
+.content {
+  max-width: 1200px;
+  color: #050229;
+  border-radius: 0.75rem;
+  box-shadow: 2px 4px 8px 4px #050229;
+  border-radius: 0.9375rem;
+  width: 70%;
+  padding: 2rem;
+  margin: auto; }
+  .content img {
+    width: 60%;
+    max-width: 600px;
+    height: auto;
+    border-radius: 1rem; }
+
+.caja1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+  .caja1 .section1 {
+    display: flex;
+    justify-content: space-around;
+    align-content: center; }
+    .caja1 .section1 img {
+      width: 90%;
+      max-width: 600px;
+      height: auto; }
+
+.section2 {
+  color: #020241;
+  font-size: 1.125rem;
+  font-family: arial;
+  text-align: justify;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 0.125rem;
+  background-image: url(../assets/conciencia.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  box-shadow: 2px 4px 8px 4px #050229;
+  border-radius: 0.9375rem;
+  width: 70%;
+  padding: 2.5rem;
+  margin: 1rem auto; }
+  .section2 p {
+    width: 80%;
+    text-align: justify;
+    margin: .50rem auto;
+    padding: 2rem;
+    font-size: 1rem; }
+
+.nosotros-p {
+  color: #020241;
+  font-size: 1.125rem;
+  font-family: arial;
+  text-align: justify;
+  margin: 1rem auto;
+  padding: 2rem; }
+
+/*llamado a components   */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 20px; }
+  .navbar li {
+    display: flex;
+    font-size: 1.125rem;
+    list-style: none;
+    font-weight: bold; }
+    .navbar li a {
+      color: #17a301;
+      font-size: 1.125rem;
+      text-decoration: none;
+      transition: all 0, 5s; }
+      .navbar li a:hover {
+        color: #3e27ae;
+        transform: scale(1.3); }
+
+.redes {
+  margin: 1rem;
+  padding: 1rem; }
+  .redes .items {
+    width: 100%;
+    color: #9a9a99;
+    font-size: 1.125rem;
+    padding: 2px; }
+    .redes .items:hover {
+      color: #3e27ae; }
+
+/*llamado a @media queries  */
+/* Estilos responsivos */
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    align-items: flex-center; }
+    .header nav {
+      width: 80%; }
+    .header .navbar {
+      flex-direction: column;
+      width: 100%; }
+      .header .navbar li {
+        margin: 0.25rem;
+        padding: 0.125rem;
+        text-align: center; }
+  h1 {
+    font-size: 2rem;
+    padding: 1rem; }
+  .content {
+    width: 80%;
+    flex-direction: column; }
+    .content p {
+      width: 100%;
+      font-size: 0.75rem;
+      padding: 1rem; }
+    .content .caja1 {
+      flex-direction: column;
+      padding: 1rem;
+      width: 100%; }
+  h2 {
+    width: 100%;
+    font-size: 1.5rem; }
+  img {
+    width: 100%; }
+  .section2 {
+    width: 80%;
+    flex-direction: column; }
+    .section2 p {
+      width: 100%;
+      font-size: 0.75rem;
+      padding: 1rem; }
+  .container {
+    width: 100%;
+    flex-direction: column;
+    align-items: center; }
+    .container p {
+      width: 100%;
+      font-size: 0.75rem; }
+    .container .card {
+      align-items: center;
+      width: 70%; } }
+
+@media (max-width: 350px) {
+  .header {
+    flex-direction: column;
+    align-items: flex-center; }
+    .header nav {
+      width: 100%; }
+    .header .navbar {
+      flex-direction: column;
+      width: 100%;
+      align-items: center;
+      gap: .50rem; }
+      .header .navbar li {
+        padding: 0.125rem;
+        text-align: center;
+        margin: auto; }
+    .header h1 {
+      font-size: 1.75rem;
+      padding: .75rem; }
+    .header .content {
+      width: 100%;
+      flex-direction: column; }
+      .header .content p {
+        width: 100%;
+        font-size: 0.75rem;
+        padding: .50rem; }
+      .header .content .caja1 {
+        flex-direction: column;
+        padding: 1rem;
+        width: 100%; }
+    .header h2 {
+      width: 100%;
+      font-size: 1.25rem;
+      margin: .25rem; }
+    .header img {
+      width: 100%; }
+    .header .section2 {
+      width: 100%;
+      flex-direction: column; }
+      .header .section2 p {
+        width: 100%;
+        font-size: 0.25rem;
+        padding: .25rem; }
+    .header .container {
+      width: 100%;
+      flex-direction: column;
+      align-items: center; }
+      .header .container p {
+        width: 100%;
+        font-size: 0.75rem; }
+      .header .container .card {
+        width: 95%;
+        align-items: center; } }

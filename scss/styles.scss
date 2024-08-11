@@ -1,0 +1,38 @@
+/*llamado e imports utilities   */
+@import "./utilities/variables";
+@import "./utilities/maps";
+@import"./utilities/mixins";
+
+
+/*llamado e imports base   */
+
+@import"./base/reset";
+@import"./base/typografias";
+
+/*llamado a layouts   */
+@import "./layouts/header";
+@import "./layouts/footer";
+@import "./layouts/sections";
+
+
+/*llamado a components   */
+@import "./components/navbar";
+
+/*llamado a @media queries  */
+@import "./layouts/media/media-768";
+@import "./layouts/media/media-350"; 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

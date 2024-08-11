@@ -1,0 +1,49 @@
+/* Footer */
+footer {
+  background: #042400;
+  padding: 1rem 0;
+}
+.container {
+  display: flex;
+  justify-content: space-around;
+  margin: auto;
+
+  .card {
+    width: 33%;
+    background: #fff;
+    margin: 1rem;
+    padding: 1rem;
+    border-radius: 4px;
+    box-shadow: 2px 4px 8px 4px #050229;
+    p{
+      text-align: justify;
+    }
+   
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+ul {
+  color:$colorParrafos;
+
+  .li {
+    padding: 0.125rem;
+    list-style: none;
+    margin:1rem;
+    text-decoration: dashed;
+  } 
+  li{
+    
+  i{
+    font-size: 1rem;
+    margin-right:1rem;
+    &:hover {
+      color:$colorHover1;
+    }
+  }
+ }
+}
+}
+
+
