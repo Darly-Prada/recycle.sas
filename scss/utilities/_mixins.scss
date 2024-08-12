@@ -13,3 +13,10 @@ gap:$gap;
     font-family: $tipo;
     text-align:$texto;
 }
+
+@mixin espacios($ancho,$margin,$interno,$borde){
+    width: $ancho;
+    margin:$margin;
+    padding: $interno;
+    border-radius:$borde;
+}

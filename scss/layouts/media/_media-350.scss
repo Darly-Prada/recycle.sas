@@ -20,6 +20,7 @@
       font-size: 1.75rem;
       padding: .75rem;
     }
+  }
     .content {
       width: 100%;
       flex-direction: column;
@@ -59,14 +60,60 @@
       width: 100%;
       font-size: 0.75rem;
     }
-    .card {   
+    .card {  
+      align-items: center; 
       width: 95%; 
-      align-items: center;
-     
+      
     }
   }
+    .section4 {
+      width: 100%;
+      flex-direction: column;
+      .container{
+        width: 100%;
+      form{
+        width: 100%;margin: none;          
+          button {
+          width: 100%;
+        }          
+        }    
+      }
+    }
+    .content1{
+      width: 100%;
+      flex-direction: column;
+    }
+    .nos2{
+      display: flex;
+      flex-wrap: wrap;
+      .caja1{
+        flex-direction: column;
+      }
+    }
+    .noticias{
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+      height: auto;
+      background-image: none;
+    background:linear-gradient(to right bottom, #d16ba5, #c777b9, 
+    #ba83ca,#aa8fd8,#9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe,
+     #41dfff, #46eefa, #5ffbf1);
+      margin: 1rem auto;
+      padding: 1rem;
+      border-radius: 1.25rem;
+      p{
+        width: 95%;
+        color:$colorParrafos;
+        font-size: 1rem;
+        align-content:center;
+        text-align: justify;
+        margin: auto;
+      }
+  }
 }
-}
+
+
 
   
 

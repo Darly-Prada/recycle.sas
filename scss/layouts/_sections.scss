@@ -1,63 +1,207 @@
 .container {
-  width: 100%;
+  @include espacios(100%, 1rem, 1rem, none);
   max-width: 1200px;
+  text-align: center;
+  margin: 0.5rem auto;
+}
+.contac {
+  flex-direction: column;
 }
 .content {
+  @include espacios(70%, auto, 2rem, 1rem);
   max-width: 1200px;
-  color: #050229;
-  border-radius: 0.75rem;
+  color: $colorParrafos;
   box-shadow: 2px 4px 8px 4px #050229;
-  border-radius: 0.9375rem;
-  width: 70%;
-  padding: 2rem;
-  margin: auto;
-  img{
-    width: 60%;
-    max-width: 600px;
-    height: auto;
-    border-radius: 1rem;
+  img {
+    width: 70%;
+    max-width: 800px;
   }
 }
 .caja1 {
- display: flex;
- justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
   align-items: center;
 
-.section1 {
-  display: flex;
-  justify-content: space-around;
-  align-content: center;
+  .section1 {
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
 
-  img {
-    width: 90%;
-    max-width: 600px;
-    height: auto;
+    img {
+      width: 90%;
+      max-width: 600px;
+      height: auto;
+    }
   }
 }
-}
 .section2 {
-  @include parrafos($colorParrafos,1.125rem,arial,justify);
-  @include flex(space-between,center,row,nowrap,.125rem);
+  @include parrafos($colorParrafos, 1.125rem, arial, justify);
+  @include flex(space-between, center, row, nowrap, 0.125rem);
+  @include espacios(70%, 1rem auto, 2.5rem, 1rem);
   background-image: url(../assets/conciencia.jpg);
   background-repeat: no-repeat;
-  background-size:contain;
+  background-size: contain;
   box-shadow: 2px 4px 8px 4px #050229;
+}
+.section3 {
+  @extend .section2;
+  @include flex(space-between, center, column, nowrap, 0.125rem);
+  flex-direction: column;
+  background-image: none;
+  img {
+    width: 100%;
+  }
+}
+.section4 {
+  background-image: url(../assets/registro.jpg);
+  background-size: cover;
   border-radius: 0.9375rem;
   width: 70%;
-  padding: 2.5rem;
+  padding: 1.5rem;
   margin: 1rem auto;
+  box-shadow: 2px 4px 8px 4px #050229;
+}
 
-  p {
-    width: 80%;
-    text-align: justify;
-    margin: .50rem auto;
-    padding: 2rem;
+form {
+  display: flex;
+  flex-direction: column;
+  border-radius: 0.9375rem;
+  width: 70%;
+  padding: 1.5rem;
+  margin: auto;
+
+  label {
+    margin: 0.5rem;
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: left;
+  }
+  input {
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    border: 1px solid $colorNombre;
+    border-radius: 4px;
     font-size: 1rem;
   }
 }
 .nosotros-p {
-  @include parrafos($colorParrafos,1.125rem,arial,justify);
-  margin: 1rem auto;
-  padding: 2rem;
+  @include parrafos($colorParrafos, 18px, arial, justify);
+  width: 80%;
+  line-height: 1;
+}
 
-} 
+.content1 {
+  @include espacios(90%, auto, 2rem, 1rem);
+  display: flex;
+  max-width: 1200px;
+  color: $colorParrafos;
+}
+
+.img2 {
+  width: 70%;
+  border-radius: 1rem;
+}
+.content1 {
+  .mision {
+    width: 100%;
+    background-image: url(../assets/mision1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: auto;
+    padding: 0.75rem;
+    margin: 0.5rem;
+    border-radius: 1.25rem;
+    box-shadow: 2px 4px 8px 4px #050229;
+  }
+  .vision {
+    width: 100%;
+    background-image: url(../assets/vision.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: auto;
+    padding: 0.75rem;
+    margin: 0.5rem;
+    border-radius: 1.25rem;
+    box-shadow: 2px 4px 8px 4px #050229;
+  }
+  p {
+    width: 100%;
+    text-align: justify;
+    margin: 0.5rem auto;
+    padding: 1rem;
+    font-size: 1rem;
+  }
+}
+.news {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+aside {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+  height: auto;
+  margin: 1rem;
+  padding: 3rem;
+  background: linear-gradient(
+    to right bottom,
+    #d16ba5,
+    #c777b9,
+    #ba83ca,
+    #aa8fd8,
+    #9a9ae1,
+    #8aa7ec,
+    #79b3f4,
+    #69bff8,
+    #52cffe,
+    #41dfff,
+    #46eefa,
+    #5ffbf1
+  );
+
+  h3 {
+    text-align: center;
+    padding-bottom: 2rem;
+    justify-items: center;
+  }
+  .link {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0.25rem;
+    margin: 0.25rem;
+    gap: 0.5rem;
+  }
+}
+.noticias {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 80%;
+  height: auto;
+  background-image: url(../assets/dia-mundial-del-reciclaje.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 1rem auto;
+  padding: 5rem;
+  border-radius: 1.25rem;
+
+  p {
+    width: 80%;
+    color: #ff027c;
+    font-size: 1.25rem;
+    align-content: center;
+    margin: auto;
+    text-align: justify;
+  }
+  .noti1 {
+    font-family: "chocoShake";
+    text-align: center;
+  }
+}

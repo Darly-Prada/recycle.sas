@@ -1,37 +1,56 @@
 header {
-    background-color: #001704;
+  background-image: linear-gradient(
+    to right bottom,
+    #062a00,
+    #073705,
+    #0b4508,
+    #115308,
+    #186208,
+    #076222,
+    #006132,
+    #005f3f,
+    #004b48,
+    #003646,
+    #002138,
+    #000921
+  );
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  color: $colorNombre;
+  padding: 0.75rem;
+  img {
+    width: 12.5rem;
+    border-radius: 15%;
+    &:hover {
+      transform: scale(1.3);
+      filter: drop-shadow(1px 2px 5px #4b4bbf);
+    }
   }
-  .header {
+  h1 {
+    font-size: 2.625rem;
+    font-family: "chocoShake";
+    &:hover {
+      color: $colorHover1;
+      text-shadow: 1px 2px 5px #ff027c;
+    }
+  }
+  nav {
+    padding-right: 1.125rem;
     display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    align-items: center;
-    color:$colorNombre;
-    padding: 0.75rem;
-    img {
-      width: 12.5rem;
-      border-radius: 15%;
-    }
-    h1{
-      font-size: 2.625rem;
-      font-family: "chocoShake";
-      &:hover {
-        color:$colorHover1;
-      }
-  
-    }
-    nav {
-      padding-right: 1.125rem;
-      display: flex;
-    }
   }
-
-  h2{
-    color:$colorTitulos;
-    font-size: 2.25rem;
-    font-weight: bold;
-  } 
-  h3{
-    color:$colorTitulos;
-    font-size: 1.5rem;
-  }
+}
+h2 {
+  color: $colorTitulos;
+  font-size: 2.25rem;
+  font-weight: bold;
+  font-family: "chocoShake";
+  text-shadow: 1px 2px 5px #ff027c;
+}
+h3 {
+  color: $colorTitulos;
+  font-size: 1.5rem;
+}
