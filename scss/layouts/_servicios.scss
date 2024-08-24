@@ -1,0 +1,78 @@
+main {
+  padding: 20px;
+
+  .section {
+    margin-bottom: 20px;
+
+    .servicios {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 1rem;
+
+      .info{
+        margin: 10px auto;
+
+        h2 {
+          font-size: 4rem;
+        }
+        p{
+          margin: 10px auto;
+          text-align: justify;
+        }
+      }
+    }
+  }
+}
+/* carrusel de imagenes */
+
+/* Formulario */
+.form{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: auto;
+  width: 70%;
+  align-content: center;
+  border: 1px solid #ccc;
+  padding: 1rem;
+  border-radius: 10px;
+  font-weight: bold;
+  background-image: url("../assets/folleto.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  ::before {
+    opacity: 0.7; /* Dar opacidad no tapar el form */
+    z-index: -1;
+  }
+
+  .opcion {
+    margin: 5px 24px;
+    color: $colorNombre;
+  }
+  h2 {
+    text-align: center;
+    width: 100%;
+  }
+  .tipos {
+    margin: 1rem;
+
+    select {
+      border-radius: 5px;
+      padding: 0.5rem;
+      margin: 0.75rem 1rem;
+      font-size: 0.875rem;
+      font-weight: bold;
+      border: 1px solid $colorNombre;
+      background-color: transparent;
+    }
+  }
+  .datos {
+    margin: 1rem;
+  }
+  .botonn {
+    width: 50%;
+    margin: auto;
+  }
+} /* cierre de main*/

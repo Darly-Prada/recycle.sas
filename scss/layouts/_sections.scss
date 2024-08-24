@@ -1,3 +1,24 @@
+.main-contac {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+
+  .section3,
+  .section4 {
+    flex: 1;
+    padding: 1rem;
+    h2 {
+      font-size: 2rem;
+      text-align: center;
+      width: 100%;
+    }
+    p {
+      width: 100%;
+      font-size: 1.125rem;
+      padding: 1rem;
+    }
+  }
+}
 .container {
   @include espacios(100%, 1rem, 1rem, none);
   max-width: 1200px;
@@ -6,37 +27,29 @@
 }
 .contac {
   flex-direction: column;
+  padding: 1rem;
+  margin: 1rem;
 }
 .content {
+  width: 100%;
   @include espacios(70%, auto, 2rem, 1rem);
   max-width: 1200px;
   color: $colorParrafos;
   box-shadow: 2px 4px 8px 4px #050229;
   img {
-    width: 70%;
-    max-width: 800px;
+    width: 90%;
+    max-width: 600px;
   }
 }
 .caja1 {
   display: flex;
   justify-content: space-between;
   align-items: center;
-
-  .section1 {
-    display: flex;
-    justify-content: space-around;
-    align-content: center;
-
-    img {
-      width: 90%;
-      max-width: 600px;
-      height: auto;
-    }
-  }
 }
 .section2 {
-  @include parrafos($colorParrafos, 1.125rem, arial, justify);
-  @include flex(space-between, center, row, nowrap, 0.125rem);
+  width: 70%;
+  @include parrafos($colorParrafos, 1rem, verdana, justify);
+  @include flex(space-between, center, column, wrap, 0.125rem);
   @include espacios(70%, 1rem auto, 2.5rem, 1rem);
   background-image: url(../assets/conciencia.jpg);
   background-repeat: no-repeat;
@@ -66,28 +79,30 @@ form {
   display: flex;
   flex-direction: column;
   border-radius: 0.9375rem;
-  width: 70%;
+  width: 100%;
   padding: 1.5rem;
   margin: auto;
 
   label {
     margin: 0.5rem;
-    font-size: 1rem;
+    font-size: 0.875rem;
     font-weight: bold;
     text-align: left;
   }
   input {
-    margin-bottom: 1rem;
-    padding: 0.5rem;
-    border: 1px solid $colorNombre;
-    border-radius: 4px;
-    font-size: 1rem;
+    margin: 0.5rem;
+    padding: 0.5rem 1.5rem;
+    border: 0.1rem solid $colorNombre;
+    border-radius: 0.5rem;
+    font-size: 0.875rem;
   }
 }
 .nosotros-p {
   @include parrafos($colorParrafos, 18px, arial, justify);
   width: 80%;
   line-height: 1;
+  padding-top: 1rem;
+  font-family: "Franklin Gothic Medium", "Arial Narrow";
 }
 
 .content1 {
@@ -96,7 +111,6 @@ form {
   max-width: 1200px;
   color: $colorParrafos;
 }
-
 .img2 {
   width: 70%;
   border-radius: 1rem;
@@ -130,78 +144,5 @@ form {
     margin: 0.5rem auto;
     padding: 1rem;
     font-size: 1rem;
-  }
-}
-.news {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  align-items: center;
-}
-
-aside {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  border-radius: 15px;
-  height: auto;
-  margin: 1rem;
-  padding: 3rem;
-  background: linear-gradient(
-    to right bottom,
-    #d16ba5,
-    #c777b9,
-    #ba83ca,
-    #aa8fd8,
-    #9a9ae1,
-    #8aa7ec,
-    #79b3f4,
-    #69bff8,
-    #52cffe,
-    #41dfff,
-    #46eefa,
-    #5ffbf1
-  );
-
-  h3 {
-    text-align: center;
-    padding-bottom: 2rem;
-    justify-items: center;
-  }
-  .link {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    padding: 0.25rem;
-    margin: 0.25rem;
-    gap: 0.5rem;
-  }
-}
-.noticias {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  align-items: center;
-  width: 80%;
-  height: auto;
-  background-image: url(../assets/dia-mundial-del-reciclaje.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  margin: 1rem auto;
-  padding: 5rem;
-  border-radius: 1.25rem;
-
-  p {
-    width: 80%;
-    color: #ff027c;
-    font-size: 1.25rem;
-    align-content: center;
-    margin: auto;
-    text-align: justify;
-  }
-  .noti1 {
-    font-family: "chocoShake";
-    text-align: center;
   }
 }

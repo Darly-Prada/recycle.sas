@@ -12,33 +12,61 @@
     <meta name="author" content="desarollador principiante Darly Prada">
     <meta name="copyright" content="DarlyP Bogotá">
 
-    <title>Recycle.sas</title>
+    <title>RECYCLE SAS</title>
     <link rel="icon" href="../assets/loguito.ico" type="logo del sitio">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
-        integrity="sha512-..." crossorigin="anonymous" />
-    <!-- Incluye el CSS de Bootstrap desde un CDN -->
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+        integrity="sha512-..." crossorigin="anonymous"/>
+    <!-- Incluye Bootstrap desde un CDN en la Navbar -->
+    <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+    crossorigin="anonymous"/>
+  
     <link rel="stylesheet" href="../css/styles.css">
 </head>
-
 <body>
     <header>
-        <div class="header">
-
-            <a href="../index.html"><img src="../assets/logotipo.jpg" alt="logotipo empresa"></a>
-            <h1>RECYCLE SAS</h1>
-            <nav>
-                <ul class="navbar">
-                    <li><a href="../index.html">Inicio</a></li>
-                    <li><a href="./nosotros.html">Nosotros</a></li>
-                    <li><a href="#">Servicios</a></li>
-                    <li><a href="./contactos.html">Contactos</a></li>
-                    <li><a href="./novedades.html">Novedades</a></li>
-                </ul>
-            </nav>
+      <!-- Barra de Navegación-->
+     <nav class="navbar navbar-expand-lg p-2 d-flex flex-wrap">
+        <div class="container">
+          <a class="navbar-brand d-flex align-items-center" href="./index.html" >
+            <img class="me-2" src="../assets/logotipo.jpg" alt="Logotipo del sitio">
+          <h1>RECYCLE SAS</h1>
+          </a>
+          <button
+            class="navbar-toggler border-dark p-2"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarText"
+            aria-controls="navbarText"
+            aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+  
+          <div class="collapse navbar-collapse" id="navbarText">
+            <ul class="navbar-nav ms-auto p-1 m-1 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="../index.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./nosotros.html">Nosotros</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./servicios.html">Servicios</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./contactos.html">Contactos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="#">Novedades</a>
+              </li>
+            </ul>
+          </div>
         </div>
-        </div>
-        <div class="redes">
+      </nav>
+  <!-- Menú de redes sociales -->
             <h3>Redes Sociales</h3>
             <div>
                 <a class="items" href="https://www.facebook.com/loguin" target="_blank">
@@ -57,39 +85,205 @@
                     <i class="fas fa-envelope fa-2x"></i>
                 </a>
             </div>
-
     </header>
-    <main class="news">
-        <h2 class="noti1">Contenido de noticias en desarollo sobre Recilaje</h2>
 
-        <aside>
-            <h3>INFORMACIÓN</h3>
-            <p>Aquí encontrarás información y noticias del mundo del reciclaje</p>
+    <main>
+        <section class="contenido">
+            <!-- Sección principal -->
+            <section class="main-section">
+                <h3>Conoce las últimas noticias del mundo del reciclaje...</h3>
+                <h2>¡No te pierdas lo último! 🌟</h2>
+                <p>
+                    <strong>Descúbre las noticias más recientes y mantente informado </strong>con las
+                    actualizaciones más relevantes del reciclaje.y estar al tanto de
+                    lo que está sucediendo en el mundo. <strong>¡No te lo puedes perder!🗣️ </strong>
+                </p>
+                <img src="../assets/dia-mundial-del-reciclaje.jpg" alt="imagen sobre reciclaje">
 
-            <div class="link">
-                <i class="fas fa-arrow-right"> <a href="https://www.greenpeace.org/colombia/" target="_blank"">Ministerio del medio ambiente</a></i>
-                <i class=" fas fa-arrow-right"> <a href="https://www.ecowatch.com/" target="_blank">Ecowatch.</a></i>
-                <i class="fas fa-arrow-right"> <a href="https://www.nationalgeographicla.com/medio-ambiente"
-                        target="_blank">National Geographic</a></i>
-            </div>
-        </aside>
-        <section class="noticias">
-            <p> Es importante consultar sitios web de noticias medioambientales o plataformas especializadas en
-                sostenibilidad como
-                GreenBiz, EcoWatch, o National Geographic y novedades sobre este tema.
+                <a href="https://www.ecoiurislapagina.com/" target="_blank">leer más Sobre Medio Ambiente</a>
+            </section>
 
-                "Avances en Tecnología de Reciclaje: Nuevos Sistemas de Separación Automatizada Aumentan la Eficiencia"
-                Recientemente, se ha anunciado un avance significativo en la tecnología de reciclaje con la
-                implementación de sistemas de separación automatizada de última generación. Estos nuevos sistemas
-                utilizan inteligencia artificial y robótica para clasificar los materiales reciclables con una precisión
-                mucho mayor que los métodos tradicionales. Esta innovación no solo mejora la eficiencia en la separación
-                de materiales, sino que también reduce los costos operativos y aumenta la calidad del material
-                reciclado. Se espera que esta tecnología impulse una mayor tasa de reciclaje y contribuya
-                significativamente a la reducción de residuos en vertederos, marcando un paso importante hacia una
-                economía circular más efectiva.</p>
+            <!-- Aside -->
+            <aside class="sidebar">
+                <h3>INFORMACIÓN</h3>
+
+
+                <p>Aquí encontrarás información y noticias del mundo del reciclaje! 🌍 </p>
+                <img src="../assets/beneficios.jpg" alt="beneficios de reciclar">
+                <div class="links">
+                    <a href="https://www.greenpeace.org/colombia/" target="_blank">Ministerio
+                        del medio Ambiente</a>
+                    <a href="https://www.ecowatch.com/" target="_blank">EcoWatch</a>
+                    <a href="https://www.nationalgeographicla.com/medio-ambiente" target="_blank">National
+                        Geographic</a>
+                </div>
+                <div class="icons">
+                    <span>👍</span>
+                    <span>👎</span>
+                    <span>💬</span>
+                </div>
+                <div class="icon">/♻️/🌍/🍃/🌱/🗑️♻️/</div>
+            </aside>
+        </section>
+
+        <section class="news-section">
+            <article class="news-item">
+                <div class="icon"> 📈 </div>
+                <h2>La Contaminación del Medio Ambiente: Un Desafío
+                    Global! 🚀 </h2>
+
+                <p>La contaminación del medio ambiente es uno de los problemas más graves que
+                    enfrentamos hoy en día. Este fenómeno afecta el aire que respiramos, el agua que bebemos y
+                    los suelos que cultivamos. La emisión de gases contaminantes de industrias, vehículos y
+                    actividades humanas, así como la acumulación de desechos tóxicos, contribuyen a la
+                    degradación de nuestros ecosistemas.</p>
+                <img src="../assets/contaminacion-768x576.jpg" alt="Noticias sobre contaminación">
+                <a href="https://www.minambiente.gov.co/" target="_blank">No Contaminemos!</a>
+            </article>
+            <article class="news-item">
+                <div class="icon">📰</div>
+                <h2>La Importancia de Reciclar: Responsabilidad de Todos 💫.</h2>
+                <img src="../assets/deposito-reciclaje.png" alt="Noticias sobre Reciclaje">
+                <p>El reciclaje es una práctica fundamental para la conservación del
+                    medio ambiente. Consiste en recolectar, clasificar y procesar materiales desechados para
+                    convertirlos en nuevos productos. Esta actividad no solo reduce la cantidad de residuos que
+                    llegan a los vertederos, sino que también disminuye la necesidad de extraer y procesar
+                    materias primas, lo que ayuda a conservar los recursos naturales y reduce la contaminación.
+                    Adoptar hábitos de reciclaje en nuestra vida diaria es crucial para proteger nuestro planeta
+                    para las futuras generaciones.</p>
+                <a href="https://www.sostenibilidadambiental.com/" target="_blank">Recicla y
+                    cuida!</a>
+            </article>
+            <article class="news-item">
+                <div class="icon">🏘️</div>
+                <h2>Responsabilidad Social: Un Compromiso Colectivo ✨ </h2>
+                <img src="../assets/responsabilidad-social.png" alt=" Responsabilidad social">
+
+                <p>La responsabilidad social es un principio fundamental que impulsa a las
+                    organizaciones y a los individuos a contribuir al bienestar de la sociedad. Este compromiso
+                    implica tomar decisiones y llevar a cabo acciones que promuevan el desarrollo sostenible, el
+                    respeto por los derechos humanos y la mejora de las condiciones de vida en las comunidades.
+                    No
+                    se trata solo de cumplir con las obligaciones legales, sino de ir más allá para hacer una
+                    diferencia positiva. Adoptar prácticas responsables y éticas, apoyar iniciativas
+                    comunitarias y
+                    fomentar un entorno de inclusión y equidad son pasos cruciales para construir un futuro más
+                    justo y equitativo para todos.</p>
+                <a href="https://www.unep.org/" target="_blank">Responsabilidad de todos</a>
+            </article>
+
+            <article class="news-item">
+                <div class="icon">🔋</div>
+                <h2>Buenas Prácticas de Reciclaje! 🌺 </h2>
+                <p>Las buenas prácticas de reciclaje son esenciales para reducir el impacto ambiental, conservar
+                    recursos naturales y promover una economía circular.</p>
+                <img src="../assets/materiales.png" alt="materiales para reciclar ">
+                <p>Reciclar de manera efectiva comienza con la correcta separación de los materiales reciclables.
+                    Asegúrate de clasificar los residuos en diferentes contenedores según el tipo de material: papel
+                    y
+                    cartón, plásticos, vidrio y metales. Enjuaga los envases para eliminar restos de alimentos o
+                    líquidos, ya que esto previene la contaminación de otros materiales reciclables. Además, evita
+                    mezclar materiales reciclables con desechos no reciclables, ya que esto puede dificultar el
+                    proceso
+                    de reciclaje y reducir la calidad del material recuperado.</p>
+
+                <a href="https://www.segurosbolivar.com/blog/sostenibilidad/practicas-sencillas-de-reciclaje-para-realizar-en-casa/"
+                    target="_blank">Buenas Prácicas</a>
+            </article>
+            <article class="news-item">
+                <div class="icon">📚</div>
+                <h2>Educación Ambiental y Reciclaje!👨‍👩‍👧‍👦 </h2>
+                <p>Fomentar la educación ambiental es esencial para crear conciencia sobre la importancia de
+                    proteger nuestro entorno natural. Esta educación nos enseña sobre los ecosistemas, la
+                    biodiversidad y las amenazas que enfrentan los recursos naturales.</p>
+                <img src="../assets/educaNiños.jpg" alt=" Educacion y reciclaje">
+                <p> A través de programas
+                    educativos y actividades, podemos comprender mejor cómo nuestras acciones impactan al
+                    medio ambiente y cómo podemos tomar decisiones más sostenibles. </p>
+                <p>La educación infantil no se limita a la enseñanza académica, sino que abarca el desarrollo emocional,
+                    social y ético de los pequeños. Es crucial que los adultos proporcionen un entorno de aprendizaje
+                    seguro, estimulante y enriquecedor. Esto implica no solo transmitir conocimientos básicos, sino
+                    también enseñar habilidades sociales, fomentar la curiosidad y promover valores como el respeto, la
+                    empatía y la responsabilidad.</p>
+                <a href="https://educacion.mma.gob.cl/que-es-educacion-ambiental/" target="_blank">Educación</a>
+            </article>
+            <article class="news-item">
+                <div class="icon">📱</div>
+                <h2> La Tecnología en el Medio Ambiente y Reciclaje!🚀 </h2>
+                <p>La tecnología ha transformado significativamente el enfoque hacia la protección del medio
+                    ambiente y el reciclaje. En el ámbito del reciclaje, la automatización y los sistemas avanzados de
+                    clasificación de residuos permiten procesar materiales de manera más eficiente, separando
+                    plásticos, metales y papeles con alta precisión. Los sensores y tecnologías de visión por
+                    computadora
+                    están mejorando la calidad de los materiales reciclados, mientras que las aplicaciones móviles
+                    facilitan a los ciudadanos la correcta separación de residuos y proporcionan información sobre
+                    puntos de
+                    reciclaje cercanos. Además, la tecnología de monitoreo ambiental, como los sensores de
+                    calidad del aire y agua, ayuda a detectar y responder rápidamente a la contaminación, permitiendo
+                    una
+                    gestión más efectiva de los recursos naturales. Estas innovaciones tecnológicas no solo optimizan
+                    los procesos de reciclaje, sino que también promueven un enfoque más consciente y proactivo
+                    hacia la sostenibilidad y la conservación del medio ambiente.</p>
+                <img src="../assets/innovacion-tecnologia.jpg" alt=" impacto tecnologíco" width="600px">
+                <a href="https://www.telefonica.com/"> Tecnología y medio ambiente</a>
+            </article>
+
+            <article class="news-item">
+                <div class="icon">🗑️</div>
+                <h2>Cómo podemos depositar residuos🫶</h2>
+                <img src="../assets/colores-del-reciclaje.webp" alt="color canecas para reciclar" width="600px">
+                <p>Reciclar es un proceso esencial para proteger el medio ambiente y conservar recursos naturales. Para
+                    hacerlo correctamente, primero separa los materiales reciclables, como papel, cartón, plásticos,
+                    vidrio
+                    y metales, asegurándote de que estén limpios y secos. Deposita estos materiales en los contenedores
+                    adecuados, siguiendo las normas locales de reciclaje. Los residuos orgánicos, como restos de comida
+                    y
+                    cáscaras de frutas, deben ir en una compostera o contenedor específico. Los residuos no reciclables,
+                    como ciertos plásticos y productos contaminados, deben colocarse en la caneca de residuos generales.
+                    Reciclar de manera adecuada reduce la contaminación, ahorra energía y ayuda a construir un futuro
+                    más
+                    sostenible.</p>
+                <a href="https://www.canecasdereciclaje.com/">Deposita tus residuos</a>
+            </article>
+
+            <article class="news-item">
+                <div class="icon">🌍</div>
+                <h2> Día mudial del Reciclaje! 🎉 </h2>
+                
+                <h3>Celebración cada 18 de marzo! 🌿🌐🎉</h3>
+                <p>El Día Mundial del Reciclaje, celebrado cada 18 de marzo, es una fecha clave para
+                    sensibilizar y educar a la comunidad sobre la importancia del reciclaje y su impacto en la
+                    protección del medio ambiente.</p> 
+                    <img src="../assets/Ambiente.jpg" alt="dia mundial del reciclaje">
+                <p> Este día se dedica a promover prácticas de reciclaje
+                    efectivas y a resaltar cómo cada individuo puede contribuir a reducir la cantidad de residuos y a
+                    conservar recursos naturales. A través de eventos educativos, talleres y campañas de concienciación,
+                    se busca motivar a las personas a adoptar hábitos sostenibles, a separar correctamente los residuos
+                    y
+                    a participar activamente en los programas de reciclaje locales. El reciclaje no solo ayuda a
+                    reducir la contaminación y la presión sobre los vertederos, sino que también fomenta una economía
+                    circular al recuperar materiales valiosos y reducir la necesidad de nuevos recursos.</p>
+                <a href="https://www.diainternacionalde.com/">Celebración</a>
+            </article>
+            <article class="news-item">
+                <div class="icon">🌱</div>
+                <h2> Una demostración de Amor: Un Legado!💚❤️</h2>
+                <img src="../assets/dia-de-reciclaje.jpg" alt="Reciclar es amar nuestro planeta">
+                <p>Mostrar amor por el planeta es fundamental para asegurar un futuro
+                    saludable y sostenible para las generaciones venideras. Cada pequeña acción cuenta, desde reducir
+                    nuestro consumo de recursos hasta apoyar iniciativas de conservación. Podemos empezar por
+                    adoptar hábitos eco-amigables como reducir, reutilizar y reciclar, así como promover el uso de
+                    energías
+                    renovables.Cuidar nuestro entorno también implica valorar la biodiversidad y proteger los hábitats
+                    naturales. Al hacer elecciones conscientes y educar a otros sobre la importancia de proteger
+                    nuestro planeta, contribuimos a preservar la belleza y la vitalidad de la Tierra para todos los
+                    seres
+                    vivos.</p>
+                
+                <a href="https://www.nationalgeographicla.com/enamoratedelplaneta" target="_blank"> Ama tú planeta</a>
+            </article>
         </section>
     </main>
-
     <footer>
         <div class="container">
             <div class="card">
@@ -131,6 +325,11 @@
     </footer>
     <!-- Incluye el JS de Bootstrap desde un CDN -->
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"
+  ></script>
 </body>
 
 </html>

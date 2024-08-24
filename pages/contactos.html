@@ -11,80 +11,120 @@
     <meta name="author" content="desarollador principiante Darly Prada">
     <meta name="copyright" content="DarlyP Bogotá">
 
-    <title>Recycle.sas</title>
+
+    <title>RECYCLE SAS</title>
     <link rel="icon" href="../assets/loguito.ico" type="logo del sitio">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
         integrity="sha512-..." crossorigin="anonymous" />
-
+    <!-- Incluye Bootstrap desde un CDN en la Navbar -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
     <link rel="stylesheet" href="../css/styles.css">
 </head>
 
 <body>
+
     <header>
-        <div class="header">
+        <!-- Barra de Navegación-->
+        <nav class="navbar navbar-expand-lg p-2 d-flex flex-wrap">
+            <div class="container">
+                <a class="navbar-brand d-flex align-items-center" href="./index.html">
+                    <img class="me-2" src="../assets/logotipo.jpg" alt="Logotipo del sitio">
+                    <h1>RECYCLE SAS</h1>
+                </a>
+                <button class="navbar-toggler border-dark p-2" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
 
-            <a href="../index.html"><img src="../assets/logotipo.jpg" alt="logotipo empresa"></a>
-            <h1>RECYCLE SAS</h1>
-            <nav>
-                <ul class="navbar">
-                    <li><a href="../index.html">Inicio</a></li>
-                    <li><a href="./nosotros.html">Nosotros</a></li>
-                    <li><a href="./servicios.html">Servicios</a></li>
-                    <li><a href="#">Contactos</a></li>
-                    <li><a href="./novedades.html">Novedades</a></li>
-                </ul>
-            </nav>
-        </div>
-        </div>
-        <div class="redes">
-            <h3>Redes Sociales</h3>
-            <div>
-                <a class="items" href="https://www.facebook.com/loguin" target="_blank">
-                    <i class="fab fa-facebook-square fa-2x"></i>
-                </a>
-                <a class="items" href="https://twitter.com/loguin" target="_blank">
-                    <i class="fab fa-twitter-square fa-2x"></i>
-                </a>
-                <a class="items" href="https://www.linkedin.com" target="_blank">
-                    <i class="fab fa-linkedin fa-2x"></i>
-                </a>
-                <a class="items" href="https://whatsapp.com" target="_blank">
-                    <i class="fab fa-whatsapp-square fa-2x"></i>
-                </a>
-                <a class="items" href="https://gmail.com" target="_blank">
-                    <i class="fas fa-envelope fa-2x"></i>
-                </a>
-            </div>
-
-    </header>
-    <main>
-        <section class="section1">
-            <div class="content">
-                <div class="caja1">
-                    <h2>RECICLANDO SALVAMOS EL PLANETA</h2>
-                    <img src="../assets/coopera.png" alt="coopera y recicla" />
+                <div class="collapse navbar-collapse" id="navbarText">
+                    <ul class="navbar-nav ms-auto p-1 m-1 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./nosotros.html">Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./servicios.html">Servicios</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#">Contactos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./novedades.html">Novedades</a>
+                        </li>
+                    </ul>
                 </div>
-                <p class="nosotros-p">Nos dedicamos a la recolección y comercialización de materiales ferrosos
-                    (chatarra) y no ferrosos (cobre,
-                    bronce, aluminio, cartón, vidrios, plásticos y papelería) con esta actividad ayudamos a la
-                    preservación
-                    del medio ambiente; permitiendo la reutilización de dichos materiales para posteriores procesos de
-                    transformación en materias primas.
-                    Disminuimos las emisiones de gases de invernadero que contribuyen al cambio climatológico
-                    global..<br>
-                    El reciclaje es una de las opciones más utilizadas en los países, para reducir la cantidad existente
-                    de
-                    residuos sólidos. Consiste en un proceso viable que reutiliza el papel, el plástico, el vidrio y
-                    otro
-                    tipo de desechos para evitar la contaminación ambiental y cuidar más al planeta. El planeta es
-                    nuestro
-                    hogar, y es importante que todos participemos de forma activa en su cuidado y mantenimiento.</p>
             </div>
+        </nav>
+        <!-- Menú de redes sociales -->
+        <h3>Redes Sociales</h3>
+        <div>
+            <a class="items" href="https://www.facebook.com/loguin" target="_blank">
+                <i class="fab fa-facebook-square fa-2x"></i>
+            </a>
+            <a class="items" href="https://twitter.com/loguin" target="_blank">
+                <i class="fab fa-twitter-square fa-2x"></i>
+            </a>
+            <a class="items" href="https://www.linkedin.com" target="_blank">
+                <i class="fab fa-linkedin fa-2x"></i>
+            </a>
+            <a class="items" href="https://whatsapp.com" target="_blank">
+                <i class="fab fa-whatsapp-square fa-2x"></i>
+            </a>
+            <a class="items" href="https://gmail.com" target="_blank">
+                <i class="fas fa-envelope fa-2x"></i>
+            </a>
+        </div>
+    </header>
 
+    <main>
+        <!-- ubicacion y video-->
+        <section class="section-if">
+            <div class="container-if">
+                <div>
+                    <h2>Mapa de Ubicación</h2>
+                    <iframe class="iframe"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d127244.36740870535!2d-74.27327045955917!3d4.702737308291487!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f9c9bced709b3%3A0xcb1f103a536b285f!2sReciclajes%20Fontibon!5e0!3m2!1ses-419!2sco!4v1724373355498!5m2!1ses-419!2sco"
+                        width="560" height="315" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <div>
+                    <h2>Video de Presentación</h2>
+                    <iframe class="iframe" width="560" height="315" src="https://www.youtube.com/embed/Rn7mCLIew6c?si=YabzUGByDDSw3uNL"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </div>
+        </section>
+
+        <div class="main-contac">
+        <section class="section3">
+            <h2>Reciclando Salvamos el Planeta 🌟</h2>
+            <img src="../assets/coopera.png" alt="coopera y recicla" />
+
+            <p>Nos dedicamos a la recolección y comercialización de materiales ferrosos
+                (chatarra) y no ferrosos (cobre,
+                bronce, aluminio, cartón, vidrios, plásticos y papelería) con esta actividad ayudamos a la
+                preservación
+                del medio ambiente; permitiendo la reutilización de dichos materiales para posteriores procesos de
+                transformación en materias primas.
+                Disminuimos las emisiones de gases de invernadero que contribuyen al cambio climatológico
+                global..<br>
+                El reciclaje es una de las opciones más utilizadas en los países, para reducir la cantidad existente
+                de
+                residuos sólidos. Consiste en un proceso viable que reutiliza el papel, el plástico, el vidrio y
+                otro
+                tipo de desechos para evitar la contaminación ambiental y cuidar más al planeta. El planeta es
+                nuestro
+                hogar, y es importante que todos participemos de forma activa en su cuidado y mantenimiento.</p>
         </section>
         <section class="section3">
             <div class="container contac">
-                <h2>Contactos</h2>
+                <h2>Contactos 🤝 </h2>
                 <img src="../assets/folleto.jpg" alt="imagen para contactos">
                 <div class="contac">
                     <h3><i class="fas fa-solid fa-phone"> 320 401 2000</i></h3>
@@ -92,12 +132,17 @@
                             contacto@recycle.com</i></h3>
                     <h3><i class="fab fa-solid fa-whatsapp-square"> Escríbenos por chat</i></h3>
                 </div>
+                <p> <strong> Nos encantaría saber de ti y cómo podemos ayudarte! 🔊</strong><br>
+                    Si tienes alguna pregunta, sugerencia o inquietud sobre cómo podemos colaborar para cuidar el medio
+                    ambiente,
+                    no dudes en contactarnos. <br>
+                    Tu opinión es importante para nosotros!</p>
             </div>
         </section>
         <section class="section4">
             <div class="container">
                 <form action="/submit_registration" method="post">
-                    <h2>Registro de Usuario</h2>
+                    <h2>Registro de Usuarios 📝</h2>
                     <label for="username">Usuario:</label>
                     <input type="text" id="username" name="username" required placeholder="Ingrese usuario">
                     <label for="password">Contraseña:</label>
@@ -110,8 +155,7 @@
                 </form>
             </div>
         </section>
-
-
+        </div>
     </main>
 
     <footer>
@@ -156,7 +200,11 @@
             </div>
         </div>
     </footer>
-
+    <!-- Incluye el JS de Bootstrap desde un CDN -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>

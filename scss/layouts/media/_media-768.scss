@@ -16,10 +16,16 @@
       }
     }
   }
+  .navbar-brand {
   h1 {
     font-size: 2rem;
     padding: 1rem;
   }
+  }
+  img{
+    height: auto;
+  }
+
   .content {
     width: 80%;
     flex-direction: column;
@@ -106,5 +112,24 @@ img {
       text-align: justify;
       margin: auto;
     }
+}
+.news-item {
+  width: calc(50% - 20px); /* 2 items por fila */
+}
+.section-if {
+  padding: 10px;
+  width: 90%;
+.container-if {
+  width: 100%;
+  flex-direction:column;
+  .iframe{
+  width: 90%;
+  margin:auto;
+  }
+}
+}
+.carousel{
+  width: 100%;
+  margin: 2px;
 }
 }

@@ -12,6 +12,8 @@
 @import "./layouts/header";
 @import "./layouts/footer";
 @import "./layouts/sections";
+@import "./layouts/section-news";
+@import "./layouts/servicios";
 
 /*llamado a components   */
 @import "./components/navbar";
@@ -20,4 +22,5 @@
 
 /*llamado a @media queries  */
 @import "./layouts/media/media-768";
+@import "./layouts/media/media-450";
 @import "./layouts/media/media-350";
