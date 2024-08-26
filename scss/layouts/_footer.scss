@@ -9,6 +9,7 @@ footer {
   display: flex;
   justify-content: space-around;
   margin: auto;
+  color:#050229;
 
   .card {
     width: 33%;
@@ -18,9 +19,12 @@ footer {
     border-radius: 4px;
     box-shadow: 2px 4px 8px 4px #050229;
     p{
+      align-items: center;
       text-align: justify;
+      color:#050229;
+      font-size: .85rem;
+      padding-top: 1rem;
     }
-   
     img {
       width: 100%;
       height: auto;
@@ -28,6 +32,7 @@ footer {
   }
 ul {
   color:$colorParrafos;
+ 
 
   .li {
     padding: 0.125rem;

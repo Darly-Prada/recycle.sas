@@ -47,7 +47,7 @@
   align-items: center;
 }
 .section2 {
-  width: 70%;
+  width: 70%; 
   @include parrafos($colorParrafos, 1rem, verdana, justify);
   @include flex(space-between, center, column, wrap, 0.125rem);
   @include espacios(70%, 1rem auto, 2.5rem, 1rem);
@@ -55,6 +55,9 @@
   background-repeat: no-repeat;
   background-size: contain;
   box-shadow: 2px 4px 8px 4px #050229;
+  &:hover{
+    transform: scale(1.02);
+  }
 }
 .section3 {
   @extend .section2;
@@ -73,6 +76,9 @@
   padding: 1.5rem;
   margin: 1rem auto;
   box-shadow: 2px 4px 8px 4px #050229;
+  &:hover{
+    transform: scale(1.02);
+  }
 }
 
 form {
@@ -100,7 +106,7 @@ form {
 .nosotros-p {
   @include parrafos($colorParrafos, 18px, arial, justify);
   width: 80%;
-  line-height: 1;
+  line-height: 1.25rem;
   padding-top: 1rem;
   font-family: "Franklin Gothic Medium", "Arial Narrow";
 }
